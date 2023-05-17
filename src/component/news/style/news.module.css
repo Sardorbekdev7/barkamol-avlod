@@ -1,0 +1,91 @@
+.newscard p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FF2059;
+}
+
+.newscard h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 27px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #000000;
+}
+
+.newscard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px !important;
+}
+
+.newscards {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 20px !important;
+  overflow: hidden !important;
+}
+
+.newscardimg p {
+  position: absolute;
+  padding: 6px 9px;
+  height: 24px;
+  left: 15px;
+  top: 15px;
+  background: #3FC1D9;
+  border-radius: 15px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.newscardimg img {
+  width: 100% !important;
+  height: auto;
+  overflow: hidden;
+}
+.newscardtext {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newscardtime {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.newscardtime img {
+  margin-right: 6px;
+  /* width: 100%;
+  overflow: hidden; */
+}
+
+.newscardtext p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}

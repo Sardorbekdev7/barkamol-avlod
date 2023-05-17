@@ -1,0 +1,90 @@
+.coursecard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.coursecard p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FF2059;
+}
+
+.coursecard h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 27px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #000000;
+}
+
+.coursecards {
+  margin: 15px !important;
+  padding: 15px;
+  height: 126px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 106px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(112, 144, 176, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.coursecards h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #012245;
+  margin: 0;
+}
+
+.coursecardoption {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  position: relative;
+}
+
+.coursecardoption p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #3E3E3E;
+  margin: 0;
+  width: 80%;
+}
+
+.coursecardoption img {
+  position: absolute;
+  /* bottom: 18px; */
+  right: 18px;
+}
+
+
+@media (max-width: 628px) {
+  .coursecards {
+    min-width: 330px;
+    height: auto;
+    min-height: 106px !important; 
+  }
+}

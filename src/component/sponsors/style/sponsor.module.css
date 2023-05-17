@@ -1,0 +1,36 @@
+.sponsorcard p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FF2059;
+}
+
+.sponsorcard h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 27px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #000000;
+}
+
+.sponsorcard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.sponsorcarousel img{
+  margin-bottom: 16px;
+}
+

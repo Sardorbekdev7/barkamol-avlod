@@ -1,0 +1,31 @@
+.structure{
+  max-width: 1617px;
+  margin: 80px auto;
+  padding: 0 100px 50px 100px;
+}
+
+.structurelink {
+  display: flex;
+}
+
+.structuretext h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.structuretext img{
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 10324px) {
+  .structure {
+    margin: 50px auto;
+    padding: 0 2rem 50px 2rem;
+  }
+}
