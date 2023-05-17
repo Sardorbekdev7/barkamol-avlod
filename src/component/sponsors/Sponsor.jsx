@@ -18,7 +18,7 @@ const Sponsor = () => {
         <p>-Hamkorlar-</p>
         <h1>Bizning hamkorlar</h1>
       </div>
-      <Carousel autoPlay>
+      <Carousel showThumbs={false} autoPlay>
         <div className={style.sponsorcarousel}>
           <Image src={img1} alt='' />
           <p>O’zbekiston Respublikasi milliy huquqiy internet portali</p>

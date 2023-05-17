@@ -18,29 +18,16 @@ const queries = [
 ]
 
 const Navbar = () => {
-  
-  // const [windowSize, setWindowSize] = useState();
-  
-  // useEffect(() => {
-  //   const handleWindowResize = () => {
-  //     setWindowSize(window.innerWidth);
-  //   };
+  const [domLoaded, setDomLoaded] = useState(false);
 
-  //   window.addEventListener('resize', handleWindowResize);
-
-  //   return () => {
-  //     window.removeEventListener('resize', handleWindowResize);
-  //   };
-  // });
-
-
-  // console.log(windowSize)
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
 
   const [mobile] = useMatchMedia(queries)
 
   return (
     <div className={style.navbar}>
-    <>
       <div className={style.nav}>
       <div className={style.brand}>
         <Link href={'/'}>
@@ -48,7 +35,9 @@ const Navbar = () => {
         </Link>
       </div>
       <div className={style.navItem}>
-        {mobile ? <DrawerBarkamol/> : 
+        {domLoaded && (
+          <>
+        {mobile ? <DrawerBarkamol /> : 
         <div className={style.navItems}>  
           <div>
             <Maktab />
@@ -67,9 +56,10 @@ const Navbar = () => {
           </div>
         </div>
         }
+        </>
+        )}
       </div>
       </div>
-    </>
       </div>
   )
 }

@@ -1,15 +1,8 @@
-import { Button, Drawer, Menu, Radio, Select, Space } from 'antd';
 import React, { useState } from 'react';
-import Image from 'next/image';
-import brand from '../../../public/navbar//brand.svg'
 import Link from 'next/link';
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {AiOutlineClose} from 'react-icons/ai'
-
-const handleChange = (value) => {
-  console.log(`selected ${value}`);
-};
-
+import { Drawer, Menu } from 'antd';
 
 const DrawerBarkamol = () => {
   const [open, setOpen] = useState(false);
@@ -19,9 +12,6 @@ const DrawerBarkamol = () => {
   };
   const onClose = () => {
     setOpen(false);
-  };
-  const onChange = (e) => {
-    setPlacement(e.target.value);
   };
 
   function getItem(label, key, icon, children, type) {
@@ -63,33 +53,34 @@ const DrawerBarkamol = () => {
     ])
   ]
   return (
-    <>
+ 
       <React.Fragment>
         <div>
-          <GiHamburgerMenu type="primary" onClick={showDrawer} />
+          <div  onClick={showDrawer}>
+            <GiHamburgerMenu />
+          </div>
+          <Drawer
+            title={<><AiOutlineClose style={{justifyContent: 'flex-end'}} type="primary" onClick={onClose} /></>}
+            placement={placement}
+            closable={false}
+            onClose={onClose}
+            open={open}
+            key={placement}
+            style={{paddingTop: '20px'}}
+          >
+            <Menu 
+              style={{
+                width: '100%',
+                marginBottom: '10px'
+              }}
+              defaultSelectedKeys={['1']}
+              defaultOpenKeys={['sub1']}
+              mode='inline'
+              items={items}
+            />
+          </Drawer>
         </div>
-        <Drawer
-          title={<><AiOutlineClose style={{justifyContent: 'flex-end'}} type="primary" onClick={onClose} /></>}
-          placement={placement}
-          closable={false}
-          onClose={onClose}
-          open={open}
-          key={placement}
-          style={{paddingTop: '20px'}}
-        >
-          <Menu 
-            style={{
-              width: '100%',
-              marginBottom: '10px'
-            }}
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['sub1']}
-            mode='inline'
-            items={items}
-          />
-        </Drawer>
       </React.Fragment>
-    </>
   );
 };
 export default DrawerBarkamol;
