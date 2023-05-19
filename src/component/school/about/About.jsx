@@ -9,7 +9,8 @@ export const About = () => {
   return (
     <div className={style.about}>
       <div className={style.aboutlink}>
-        <Link href={'/maktab/'}>Maktab </Link>{' > '}<Link href={'/maktab/maktab-haqida/'}> Maktab haqida</Link>
+        <p>Maktab {'>'}</p>
+        <Link href={'/maktab/maktab-haqida/'}> Maktab haqida</Link>
       </div>
       <div className={style.abouttext}>
         <Image src={img} alt='' />

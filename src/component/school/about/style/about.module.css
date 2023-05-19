@@ -4,6 +4,16 @@
   margin: 80px auto;
 }
 
+.aboutlink p {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3D3D3D;
+}
 .aboutlink{
   display: flex;
 }
@@ -17,6 +27,7 @@
   color: #3D3D3D;
 }
 
+
 .abouttext {
   display: flex;
   flex-direction: column;
@@ -26,6 +37,7 @@
 
 .abouttext img {
   width: 100% !important;
+  height: auto;
   margin-bottom: 70px;
   margin-top: 30px;
 }
@@ -58,5 +70,8 @@
 @media (max-width: 678px) {
   .abouttext img{
     margin: 0;
+  }
+  .abouttext h1{
+    font-size: 25px;
   }
 }
