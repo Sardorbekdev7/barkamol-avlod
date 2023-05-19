@@ -62,9 +62,9 @@
 @media (max-width: 1024px) {
   .homepage {
     width: 100%;
-    height: 40vh !important;
-    background-size: auto 100%;
-    overflow: hidden;
+    height: 45vh !important;
+    background-size: cover !important;
+    /* overflow: hidden; */
   }
   .homepage h2{
     font-size: 30px;
