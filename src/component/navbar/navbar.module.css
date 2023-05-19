@@ -68,7 +68,7 @@
   .navbar {
     top: 0px !important;
     padding: 0 3.1rem;
-    position: relative;
+    position: sticky;
   }
 }
 

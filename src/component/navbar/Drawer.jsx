@@ -73,8 +73,6 @@ const DrawerBarkamol = () => {
                 width: '100%',
                 marginBottom: '10px'
               }}
-              defaultSelectedKeys={['1']}
-              defaultOpenKeys={['sub1']}
               mode='inline'
               items={items}
             />

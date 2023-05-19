@@ -10,6 +10,13 @@
   color: #FF2059;
 }
 
+.sponsorcarousel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
 .sponsorcard h1 {
   font-family: 'Poppins';
   font-style: normal;
@@ -32,5 +39,9 @@
 
 .sponsorcarousel img{
   margin-bottom: 16px;
+  height: 100px;
 }
 
+.sponsorcarousel p{
+  text-align: center;
+}

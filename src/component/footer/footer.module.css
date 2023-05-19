@@ -146,9 +146,7 @@
 }
 
 @media (max-width: 768px) {
-  .footRight li{
-    display: none;
-  }
+ 
 
   .footRightForm {
     height: auto !important;
@@ -169,5 +167,9 @@
   .footRightForm form{
 
     flex-direction: column !important;
+  }
+
+  .footRight ul{
+    padding: 0;
   }
 }
