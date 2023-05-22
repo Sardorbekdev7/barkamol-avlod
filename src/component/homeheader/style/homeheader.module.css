@@ -5,7 +5,9 @@
   padding: 250px 0 125px 0 !important;
   margin:  0 auto;
   background-image: url('../../../../public/homeheader/header.svg');
-  background-size: 100%;
+  background-size: 100% auto;
+  background-position-x: center;
+  background-position-y: center;
   background-position: left;
   background-repeat: no-repeat;
   top: -78px;
