@@ -39,19 +39,19 @@ const Navbar = () => {
           <>
         {mobile ? <DrawerBarkamol /> : 
         <div className={style.navItems}>  
-          <div>
+          <div style={{cursor: 'pointer'}}>
             <Maktab />
           </div>
-          <div>
+          <div style={{cursor: 'pointer'}}>
             <HujjatlarNavbar />
           </div>
-          <div>
+          <div style={{cursor: 'pointer'}}>
             <Talim />
           </div>
-          <div>
+          <div style={{cursor: 'pointer'}}>
             <Faoliyat />
           </div>
-          <div>
+          <div style={{cursor: 'pointer'}}>
             <Axborot />
           </div>
         </div>

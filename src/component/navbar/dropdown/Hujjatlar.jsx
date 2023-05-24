@@ -8,13 +8,13 @@ const items = [
   {
     key: '1',
     label: (
-      <Link href="/hujjatlar/331-qaror/">331-qaror</Link>
+      <p>331-qaror</p>
     )
   },
   {
     key: '2',
     label: (
-      <Link href="/hujjatlar/4467-qaror/">4467-qaror</Link>
+      <p>4467-qaror</p>
     )
   }
 ]
