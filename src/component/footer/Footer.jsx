@@ -38,11 +38,11 @@ const Footer = () => {
                   Navoiy ko’chasi, 2A uy 
                   </span>
                   <div className={style.aloqa}>
-                    <a href='tel: +998712020909'><Image src={tel} alt='tel'/><p>(71) 202 09 09</p></a>
-                    <a href="mail: info@tbabm.uz"><Image src={mail} alt='mail' /><p>info@tbabm.uz</p></a>
-                    <a href="https://www.facebook.com//@tosh_babm" target='blank'><Image src={facebook} alt='facebook' /><p>@tosh_babm</p></a>
-                    <a href="https://www.instagram.com/@toshbabm" target='blank'><Image src={insta} alt='instagram' /><p>@toshbabm</p></a>
-                    <a href="https://www.t.me/@toshkent_babm" target='blank'><Image src={telegram} alt='telegram' /><p>@toshkent_babm</p></a>
+                    <a href='tel:+998712020909'><Image src={tel} alt='tel'/><p>(71) 202 09 09</p></a>
+                    <a href="mailto:info@tbabm.uz"><Image src={mail} alt='mail' /><p>info@tbabm.uz</p></a>
+                    <a href="https://www.facebook.com/tosh_babm" target='blank'><Image src={facebook} alt='facebook' /><p>@tosh_babm</p></a>
+                    <a href="https://www.instagram.com/toshbabm" target='blank'><Image src={insta} alt='instagram' /><p>@toshbabm</p></a>
+                    <a href="https://t.me/toshkent_babm" target='blank'><Image src={telegram} alt='telegram' /><p>@toshkent_babm</p></a>
                   </div>
                 </Col>
               </Row>

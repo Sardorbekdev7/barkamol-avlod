@@ -39,14 +39,14 @@ a{
 }
 
 .ant-menu-title-content a {
-  text-decoration: none;
+  text-decoration: none !important;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000000 !important;
 }
 
 .ant-menu-title-content p{
@@ -58,4 +58,9 @@ a{
   display: flex;
   align-items: center;
   color: #000000;
+}
+
+a{
+  text-decoration: none !important;
+  
 }
