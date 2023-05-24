@@ -14,7 +14,7 @@ const Bosses = () => {
   return (
     <div className={style.bosses}>
       <div className={style.bosseslink}>
-        <Link href={'/maktab/'}>Maktab</Link><p>{' > '}</p><Link href={'/maktab/rahbariyat/'}>Rahbariyat</Link>
+        <Link href={'/'}>Maktab</Link><p>{' > '}</p><Link href={'/maktab/rahbariyat/'}>Rahbariyat</Link>
       </div>
       <div>
         <Row>
@@ -37,9 +37,15 @@ const Bosses = () => {
                   E-mail: info@barkamolavlod.uz
                 </span>
                 <div>
-                  <Image src={facebook} alt='' />
-                  <Image src={instagram} alt='' />
-                  <Image src={telegram} alt='' />
+                  <a href={'https://www.facebook.com/tosh_babm'} target='blank'>
+                    <Image src={facebook} alt='' />
+                  </a>
+                  <a href="https://www.instagram.com/toshbabm" target='blank'>
+                    <Image src={instagram} alt='' />
+                  </a>
+                  <a href="https://t.me/toshkent_babm" target='blank'>
+                    <Image src={telegram} alt='' />
+                  </a>
                 </div>
               </div>
             </div>
