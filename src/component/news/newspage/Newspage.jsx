@@ -6,6 +6,9 @@ import Image from 'next/image'
 import { Button } from 'antd'
 import style from './style/newspage.module.css'
 import OtherNews from './OtherNews'
+import facebook from '../../../../public/news/facebook.svg'
+import instagram from '../../../../public/news/instagram.svg'
+import telegram from '../../../../public/news/telegram.svg'
 
 const Newspage = () => {
   return (
@@ -30,7 +33,7 @@ const Newspage = () => {
               <br />
               <br />
               Davlat rahbari nutqining avvalida soha bo‘yicha dunyodagi vaziyatga to‘xtalib, millionlab bolalarning boshlang‘ich bilim olish imkoniyati cheklangani, mutaxassislar birgalashib, maktabgacha ta’lim qamrovini oshirishi muhimligini aytdi. O‘zbekistonda «inson qadri, uning huquq va manfaatlari – oliy qadriyat» degan tamoyil asosida aholi uchun munosib turmush sharoitlari yaratilayotgani ta’kidlandi.
-              <h4>«Bu borada, avvalambor, yoshlar va bolalarga e’tibor va amaliy g‘amxo‘rlik ko‘rsatish, ularni jismoniy va ma’naviy barkamol etib tarbiyalashga alohida ahamiyat qaratmoqdamiz. Bolalarni kichik yoshdan boshlab rivojlantirish orqali kelajakda ularning o‘zligini to‘la namoyon etishiga mustahkam zamin yaratayapmiz. Zero, bu ezgu maqsadimiz yo‘lida sarflangan investitsiyalar ertaga bir necha barobar ortig‘i bilan qaytishiga shubha yo‘q», – dedi Shavkat Mirziyoyev.</h4>
+              <span>«Bu borada, avvalambor, yoshlar va bolalarga e’tibor va amaliy g‘amxo‘rlik ko‘rsatish, ularni jismoniy va ma’naviy barkamol etib tarbiyalashga alohida ahamiyat qaratmoqdamiz. Bolalarni kichik yoshdan boshlab rivojlantirish orqali kelajakda ularning o‘zligini to‘la namoyon etishiga mustahkam zamin yaratayapmiz. Zero, bu ezgu maqsadimiz yo‘lida sarflangan investitsiyalar ertaga bir necha barobar ortig‘i bilan qaytishiga shubha yo‘q», – dedi Shavkat Mirziyoyev.</span>
               Shu bois davlat rahbari bu bo‘g‘inga alohida e’tibor qaratib, barkamol avlodni aynan kichik yoshdan tarbiyalash siyosatini belgilab berdi. O‘zbekiston Prezidentining 2017 yil 30 sentabrdagi farmoniga muvofiq, Maktabgacha ta’lim vazirligi tashkil etildi. Bog‘chalar qurish va ta’mirlash, ilg‘or tarbiya uslublari va metodikalarini joriy etish bo‘yicha ko‘p ishlar boshlandi.
               <br />
               <br />
@@ -44,12 +47,6 @@ const Newspage = () => {
           <div className='back'>
             <Link href={'/'}>Ortga</Link>
           </div>
-          {/* <div className={style.newscard}>
-            <p>Yangiliklarni tarmoqlarda ulashing</p>
-            <div>
-
-            </div>
-          </div> */}
 
         </div>
         <div className={style.othernews}>
@@ -57,6 +54,23 @@ const Newspage = () => {
           <OtherNews />
         </div>
       </div>
+          <div className={style.newscard}>
+            <p>Yangiliklarni tarmoqlarda ulashing</p>
+            <div className={style.newslink}>
+              <div className={style.newslinks}>
+                <Image src={facebook} alt="" />
+                <span>Facebook</span>
+              </div>
+              <div className={style.newslinks}>
+                <Image src={instagram} alt="" />
+                <span>Instagram</span>
+              </div>
+              <div className={style.newslinks}>
+                <Image src={telegram} alt="" />
+                <span>Telegram</span>
+              </div>
+            </div>
+          </div>
     </div>
   )
 }

@@ -10,19 +10,22 @@ import Stat from '@/component/stat/Stat';
 import Sponsor from '@/component/sponsors/Sponsor';
 import Head from 'next/head';
 import SEO from '@/helps/SEO/SEO';
+import { StrictMode } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <SEO metaTitle="Barkamol Avlod Bolalar maktabi">
-      <Navbar />
-        <HomeHeader />
-        <Courses />
-        <News />
-        <Stat />
-        <Sponsor />
-      <Footer />
-    </SEO>
+    <StrictMode>
+      <SEO metaTitle="Barkamol Avlod Bolalar maktabi">
+        <Navbar />
+          <HomeHeader />
+          <Courses />
+          <News />
+          <Stat />
+          <Sponsor />
+        <Footer />
+      </SEO>
+    </StrictMode>
   )
 }

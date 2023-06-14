@@ -58,7 +58,7 @@ const Footer = () => {
                   onFinishFailed={onFinishFailed}
                   autoComplete="off"
                 >
-                  <Input placeholder='Ismingiz...' />
+                  <Input label='Ism Familya' placeholder='Ismingiz...' />
                   <Input placeholder='Elektron pochta...' />
                   <Button>
                     Obuna bo{`'`}lish

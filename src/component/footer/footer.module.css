@@ -3,11 +3,14 @@
   padding: 60px 100px;
   max-width: 1517px;
   margin: 0 auto;
-
+  background-image: url('../../../public/footer/union.svg');
+  background-repeat: no-repeat !important;
+  background-position: left;
 }
 
 .footBrand {
   margin-bottom: 40px;
+  width: 58px;
 }
 
 .footLeft {
@@ -85,7 +88,7 @@
 .footRightForm button {
   width: 150px;
   height: 48px;
-  background: #FF2059;
+  background: #20AFFF;
   border-radius: 24px;
   font-family: 'Poppins';
   font-style: normal;

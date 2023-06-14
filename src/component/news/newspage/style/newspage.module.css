@@ -61,6 +61,7 @@
 .newspagetext span {
   font-weight: 600;
   font-size: 16px;
+  line-height: 18px;
 }
 
 .newspagetext h4{
@@ -113,7 +114,44 @@
 }
 
 
+.newscard {
+  max-width: 569px;
+  min-height: 144px;
+  background: #012245;
+  border-radius: 25px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+}
 
+.newslink {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newscard p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.newslinks {
+  min-width: 156px;
+  margin: 5px 0;
+  height: 55px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newslinks img{
+  margin-right: 12px;
+}
 
 
 
@@ -135,5 +173,11 @@
 
   .othernews {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .newslink {
+    flex-direction: column;
   }
 }
