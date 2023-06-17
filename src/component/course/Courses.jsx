@@ -15,7 +15,7 @@ const Courses = () => {
       </div>
       <Row>
         <Col lg={6} md={12} sm={24}>
-          <Link href={'/talim-yonalishlari/madaniyat/'}>
+          <Link href={'/talim-yonalishlari/madaniyat-sanat/'}>
             <div className={style.coursecards}>
               <h1>Madaniayt <br /> ba san`at</h1>
               <div className={style.coursecardoption}>

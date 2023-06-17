@@ -1,26 +1,23 @@
-import Link from 'next/link'
 import React from 'react'
-import { Container } from 'react-bootstrap'
-import img1 from '../../../../public/newspage/img1.svg'
-import Image from 'next/image'
-import { Button } from 'antd'
-import style from './style/newspage.module.css'
-import OtherNews from './OtherNews'
-import Links from './Links'
+import style from './style/course.module.css'
+import Link from 'next/link'
+import OtherNews from '@/component/news/newspage/OtherNews'
+import Links from '@/component/news/newspage/Links'
 
-const Newspage = () => {
+const Course = ( {data} ) => {
+
   return (
-    <div className={style.container}>
+      <div className={style.container}>
       <div className={style.newspages}>
         <div className={style.newspage}>
           <div>
-            <p><Link href={'/'}>Axborot xizmati</Link> {`>`} <Link href={'/axborot-xizmati/yangiliklar/'}>Yangiliklar</Link></p> 
+            <p><Link href={'/'}>Axborot xizmati</Link> {`>`} <Link href={'/talim-yonalishlari/'}>Ma`daniyat va Sa`nat</Link><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>{data.title}</Link></p> 
           </div>
           <h1>«Sarflangan investitsiyalar ortig‘i bilan qaytishiga shubha yo‘q» - Shavkat Mirziyoyev maktabgacha ta’lim sohasiga e’tibor haqida</h1>
           <div>
             <span>20:30 | 03.02.2023         129</span>
           </div>
-          <Image src={img1} alt='' width={'100%'} />
+          {/* <Image src={img1} alt='' width={'100%'} /> */}
           <div className={style.newspagetext}>
             <p>
               <span>O‘zbekiston prezidenti maktabgacha ta’lim sohasida xalqaro hamkorlikni kengaytirish bo‘yicha muhim tashabbuslarni ilgari surdi.</span>
@@ -57,4 +54,4 @@ const Newspage = () => {
   )
 }
 
-export default Newspage
+export default Course
