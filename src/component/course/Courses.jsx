@@ -4,6 +4,7 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import mad from '../../../public/course/mad.svg'
 import style from './style/couses.module.css'
+import Link from 'next/link'
 
 const Courses = () => {
   return (
@@ -14,13 +15,15 @@ const Courses = () => {
       </div>
       <Row>
         <Col lg={6} md={12} sm={24}>
-          <div className={style.coursecards}>
-            <h1>Madaniayt <br /> ba san`at</h1>
-            <div className={style.coursecardoption}>
-              <p>Madaniyat va san’at yo‘nalishida 11 turdagi to‘garak mavjud</p> 
-              <Image src={mad} alt=''/>
+          <Link href={'/talim-yonalishlari/madaniyat/'}>
+            <div className={style.coursecards}>
+              <h1>Madaniayt <br /> ba san`at</h1>
+              <div className={style.coursecardoption}>
+                <p>Madaniyat va san’at yo‘nalishida 11 turdagi to‘garak mavjud</p> 
+                <Image src={mad} alt=''/>
+              </div>
             </div>
-          </div>
+          </Link>
         </Col>
         <Col lg={6} md={12} sm={24}>
           <div className={style.coursecards}>
