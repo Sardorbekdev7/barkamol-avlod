@@ -8,6 +8,10 @@ a{
   text-decoration: none;
 }
 
+p{
+  margin: 0 !important;
+}
+
 .ant-form-item {
   margin-bottom: 0 !important;
 }
