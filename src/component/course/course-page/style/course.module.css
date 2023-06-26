@@ -4,11 +4,16 @@
   padding: 50px 100px;
 }
 
+.newspage img{
+  margin: 25px 0;
+}
+
 .newspages{
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 70px;
+  margin-top: 80px;
 }
 
 .newspage {
@@ -154,7 +159,18 @@
   margin-right: 12px;
 }
 
+.change_course {
+  display: flex;
+  flex-direction: column;
+}
 
+.change_course button {
+  border: none;
+  border-bottom: 1px solid #BFBFBF ;
+  text-align: left;
+  border-radius: 0;
+  height: 50px;
+}
 
 
 

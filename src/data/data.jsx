@@ -12,3 +12,20 @@ export const  data = {
     Natijada so‘nggi yillarda maktabgacha ta’lim muassasalari soni 6 barobarga ko‘paydi. Tarbiyachi va pedagoglar soni ham 3 barobarga o‘sib, 160 mingga yetdi. Shu tariqa, bog‘cha yoshidagi 2 million 800 ming nafar boladan 2 million nafari maktabgacha ta’lim bilan qamrab olindi.`,
   }
 
+export const course = [
+  {
+    "title" : "Futbol to`garagi"
+  },
+  {
+    "title" : "Basketbol to`garagi"
+  },
+  {
+    "title" : "Qo`shiqchilik to`garagi"
+  },
+  {
+    "title" : "Kulolchilik to`garagi"
+  },
+  {
+    "title" : "Durodgarlik to`garagi"
+  },
+]
