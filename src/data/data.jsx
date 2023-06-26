@@ -29,3 +29,58 @@ export const course = [
     "title" : "Durodgarlik to`garagi"
   },
 ]
+
+export const gallery = [
+  {
+    "image" : "https://s3-alpha-sig.figma.com/img/4499/54ed/6f219b6fa5771ff520fb54ea329f8c96?Expires=1688947200&Signature=LtPtASVooPeYv6~oM6ilmXgkgACODfBljIaPHgWyqx01x9okfOlE7OWAzR-hTNVWAHKI3XEd1Fo0qR8wIbppyxN7iXsHWkyo1G26O5BWOjuwAxUMgoSUJ9x~7iKv~q~KNS9rs4iorfcGL-oGeH77RcCL0KQum8x3ELLuywqhGWS9XfF~~dK18kLsEdmuZHm6IOi1~TJKWCauuoIfZE4H7y8DaxKNpMsXs5fP98mS2u~1-4Ayf9BCorWW6U6cqmeD8KKMkEWHVbkG37BYSE09syJhW9br0IrmirBBcVcLQzGt1iZ8aBsxcl9s44Yk7Aqd2bgMGufyO~x3WUCZ~AoLgw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "deskeription" : "Mustaqillik bayrami kuni bo’lib o’tgan yig’ilishdan lavhalar",
+  },
+  {
+    "image" : "https://s3-alpha-sig.figma.com/img/1e51/d91a/fd1a3522f6cc1da44704cdc1057565d9?Expires=1688947200&Signature=PzhbqNa1jFy3C41fm6Xvm-C~tiDDk51BuNNvXb7GSsyTJxBGKDbWae7cZEMqAEKwXL9vesAE~Fx5Ml-cz7W7sYfROQOddTpnFSdLgHZzs8iJiuL5JRwR0rJHtB~Z83-DU5FkP~Sy-MF0qW0gixeq1FBiuHHpJL9hu-ZrF7iGADG7186c~CXplpf6e92S150WWwHguh-NZGnITZG6Cd9d67TmQL0UPtwq9jB96A0LcGr67j1wcKP7em8bx4E8haKoSUCp7kTnkJgWqIJS2TX65krUPJqmpsyVwmuV~j6g6HLo-mhAnLOUzLwSpaWY2hrHMHZuA5J-N4FscJfT83UazA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "deskeription" : "Halqaro olimpiada sovrindorlaruni kutib olish jarayonidan lavhalar",
+  },
+  {
+    "image" : "https://s3-alpha-sig.figma.com/img/288e/a241/84af3072efe140209d66d01451a626be?Expires=1688947200&Signature=bLx2stIMcUd~Y3VBDOymICyNnVjEBms4ZOfLB0-gUKBqp8FgFd6eISyTgx7L0WNA0yvmH7Tjzhnnf2cBmgI6jRjFPtkqmMMn3wpUoP5dweSzqQiTRUTig2h1wl-KUta0GlSGyoQM7LWOaXylrPpRFAmKXQo-pb7WQMYRdUeVFO98dQ~zw6jswp63WB9JxmlZaJ4raEpjm-BI1ud9jGYsuVcf~p7h2zaw5bG2iMihpnZDWduhvyPKV6e-MzZiX08BKpPi0StlANuQ51K6Araut6gFsgDPLtTHpYxIRHeWG67~YMBqLIWX7ry7TaGUtVeoRqcyEWjleDVWLSNYI9Cnrg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "deskeription" : "14-yanvar, Vatan Himoyachilari Kunidagi ekskursiyadan lavhalar",
+  },
+  {
+    "image" : "https://s3-alpha-sig.figma.com/img/4499/54ed/6f219b6fa5771ff520fb54ea329f8c96?Expires=1688947200&Signature=LtPtASVooPeYv6~oM6ilmXgkgACODfBljIaPHgWyqx01x9okfOlE7OWAzR-hTNVWAHKI3XEd1Fo0qR8wIbppyxN7iXsHWkyo1G26O5BWOjuwAxUMgoSUJ9x~7iKv~q~KNS9rs4iorfcGL-oGeH77RcCL0KQum8x3ELLuywqhGWS9XfF~~dK18kLsEdmuZHm6IOi1~TJKWCauuoIfZE4H7y8DaxKNpMsXs5fP98mS2u~1-4Ayf9BCorWW6U6cqmeD8KKMkEWHVbkG37BYSE09syJhW9br0IrmirBBcVcLQzGt1iZ8aBsxcl9s44Yk7Aqd2bgMGufyO~x3WUCZ~AoLgw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "deskeription" : "Mustaqillik bayrami kuni bo’lib o’tgan yig’ilishdan lavhalar",
+  },
+
+  {
+    "image" : "https://s3-alpha-sig.figma.com/img/1e51/d91a/fd1a3522f6cc1da44704cdc1057565d9?Expires=1688947200&Signature=PzhbqNa1jFy3C41fm6Xvm-C~tiDDk51BuNNvXb7GSsyTJxBGKDbWae7cZEMqAEKwXL9vesAE~Fx5Ml-cz7W7sYfROQOddTpnFSdLgHZzs8iJiuL5JRwR0rJHtB~Z83-DU5FkP~Sy-MF0qW0gixeq1FBiuHHpJL9hu-ZrF7iGADG7186c~CXplpf6e92S150WWwHguh-NZGnITZG6Cd9d67TmQL0UPtwq9jB96A0LcGr67j1wcKP7em8bx4E8haKoSUCp7kTnkJgWqIJS2TX65krUPJqmpsyVwmuV~j6g6HLo-mhAnLOUzLwSpaWY2hrHMHZuA5J-N4FscJfT83UazA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "deskeription" : "Halqaro olimpiada sovrindorlaruni kutib olish jarayonidan lavhalar",
+  },
+  {
+    "image" : "https://s3-alpha-sig.figma.com/img/4499/54ed/6f219b6fa5771ff520fb54ea329f8c96?Expires=1688947200&Signature=LtPtASVooPeYv6~oM6ilmXgkgACODfBljIaPHgWyqx01x9okfOlE7OWAzR-hTNVWAHKI3XEd1Fo0qR8wIbppyxN7iXsHWkyo1G26O5BWOjuwAxUMgoSUJ9x~7iKv~q~KNS9rs4iorfcGL-oGeH77RcCL0KQum8x3ELLuywqhGWS9XfF~~dK18kLsEdmuZHm6IOi1~TJKWCauuoIfZE4H7y8DaxKNpMsXs5fP98mS2u~1-4Ayf9BCorWW6U6cqmeD8KKMkEWHVbkG37BYSE09syJhW9br0IrmirBBcVcLQzGt1iZ8aBsxcl9s44Yk7Aqd2bgMGufyO~x3WUCZ~AoLgw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "deskeription" : "Mustaqillik bayrami kuni bo’lib o’tgan yig’ilishdan lavhalar",
+  },
+]
+
+export const videogallery = [
+  {
+    "video" : '<iframe width="560" height="315" src="https://www.youtube.com/embed/DnkB_dBJKJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    "deskeription" : "Mustaqillik bayrami kuni bo’lib o’tgan yig’ilishdan lavhalar"
+  },
+  {
+    "video" : '<iframe width="560" height="315" src="https://www.youtube.com/embed/DnkB_dBJKJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    "deskeription" : "Halqaro olimpiada sovrindorlaruni kutib olish jarayonidan lavhalar",
+  },
+  {
+    "video" : '<iframe width="560" height="315" src="https://www.youtube.com/embed/DnkB_dBJKJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    "deskeription" : "14-yanvar, Vatan Himoyachilari Kunidagi ekskursiyadan lavhalar",
+  },
+  {
+    "video" : '<iframe width="560" height="315" src="https://www.youtube.com/embed/DnkB_dBJKJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    "deskeription" : "Mustaqillik bayrami kuni bo’lib o’tgan yig’ilishdan lavhalar",
+  },
+  {
+    "video" : '<iframe width="560" height="315" src="https://www.youtube.com/embed/DnkB_dBJKJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    "deskeription" : "Halqaro olimpiada sovrindorlaruni kutib olish jarayonidan lavhalar",
+  },
+  {
+    "video" : '<iframe width="560" height="315" src="https://www.youtube.com/embed/DnkB_dBJKJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    "deskeription" : "Mustaqillik bayrami kuni bo’lib o’tgan yig’ilishdan lavhalar",
+  },
+]

@@ -7,13 +7,13 @@ const items = [
   {
     key: '1',
     label: (
-      <p>Galereya</p>
+      <Link href={'/axborot-xizmati/galereya'}>Galereya</Link>
     )
   },
   {
     key: '2',
     label: (
-      <p>Videogaleya</p>
+      <Link href={'/axborot-xizmati/videogalereya'}>Videogaleya</Link>
     )
   }
 ]
