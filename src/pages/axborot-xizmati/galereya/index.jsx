@@ -5,7 +5,7 @@ import SEO from '@/helps/SEO/SEO'
 
 const index = () => {
   return (
-    <SEO metaTitle='Axborot xizmati'>
+    <SEO metaTitle={'Axborot xizmati'}>
       <Layout>
         <Gallery data={gallery} titles={"Fotogalereya"} />
       </Layout>

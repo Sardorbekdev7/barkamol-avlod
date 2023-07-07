@@ -10,7 +10,7 @@ a{
 
 }
 
-p{
+p, h1{
   margin: 0 !important;
   font-family: Poppins;
 }
@@ -43,6 +43,12 @@ p{
   align-items: center;
   justify-content: center;
   color: #FFFFFF !important;
+}
+
+.back:hover a{
+  border: 1px solid #20AFFF;
+  color: #20AFFF !important;
+  background-color: #FFFFFF;
 }
 
 .ant-menu-title-content a {

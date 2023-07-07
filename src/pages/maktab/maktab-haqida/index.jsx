@@ -5,7 +5,7 @@ import React from 'react'
 
 const SchoolAbout = () => {
   return (
-    <SEO metaTitle='Maktab haqida'>
+    <SEO metaTitle={'Maktab haqida'}>
       <Layout>
         <About />
       </Layout>

@@ -36,12 +36,12 @@ const DrawerBarkamol = () => {
     ]),
     getItem(<Link href="/talim-yonalishlari/"><p>Ta{`'`}lim yo{`'`}nalishlari</p></Link>, 'sub3', <></>, [
       getItem(<Link href="/talim-yonalishlari/madaniyat-sanat/"><p>Madaniyat va san{`'`}at</p></Link>, '1'),
-      getItem(<Link href="/talim-yonalishlari/texnika/"><p>Texnika konstruktorlik va modellashtirish</p></Link>, '2'),
-      getItem(<Link href="/talim-yonalishlari/jismoniy-tarbiya/"><p>Jismoniy tarbiya va sport</p></Link>, '3'),
-      getItem(<Link href="/talim-yonalishlari/hunarmandchilik/"><p>Hunarmandchilik va qo{`'`}l mehnati</p></Link>, '4'),
-      getItem(<Link href="/talim-yonalishlari/ekologiya/"><p>Ekologiya va turizm</p></Link>, '5'),
-      getItem(<Link href="/talim-yonalishlari/oliy-talim/"><p>Oliy ta{`'`}lim muassasalari va maktabga tayyorlov</p></Link>, '6'),
-      getItem(<Link href="/talim-yonalishlari/xorijiy-tillar/"><p>Xorijiy tillar</p></Link>, '7')
+      getItem(<Link href="/talim-yonalishlari/madaniyat-sanat/"><p>Texnika konstruktorlik va modellashtirish</p></Link>, '2'),
+      getItem(<Link href="/talim-yonalishlari/madaniyat-sanat/"><p>Jismoniy tarbiya va sport</p></Link>, '3'),
+      getItem(<Link href="/talim-yonalishlari/madaniyat-sanat/"><p>Hunarmandchilik va qo{`'`}l mehnati</p></Link>, '4'),
+      getItem(<Link href="/talim-yonalishlari/madaniyat-sanat/"><p>Ekologiya va turizm</p></Link>, '5'),
+      getItem(<Link href="/talim-yonalishlari/madaniyat-sanat/"><p>Oliy ta{`'`}lim muassasalari va maktabga tayyorlov</p></Link>, '6'),
+      getItem(<Link href="/talim-yonalishlari/madaniyat-sanat/"><p>Xorijiy tillar</p></Link>, '7')
     ]),
     getItem(<p>Faoliyat</p>, 'sub4', <></>, [
       getItem(<Link href="/faoliyat/togarak-rahbarlari/"><p>To{`'`}garak boshliqlari</p></Link>, '1'),

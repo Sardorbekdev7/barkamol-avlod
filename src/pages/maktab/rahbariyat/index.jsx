@@ -5,7 +5,7 @@ import React from 'react'
 
 const BossPage = () => {
   return (
-    <SEO metaTitle='Rahbariyat'>
+    <SEO metaTitle={'Rahbariyat'}>
       <Layout>
         <Bosses />
       </Layout>

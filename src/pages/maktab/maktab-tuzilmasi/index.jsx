@@ -5,7 +5,7 @@ import React from 'react'
 
 const index = () => {
   return (
-    <SEO metaTitle='Maktab tuzilmasi'>
+    <SEO metaTitle={'Maktab tuzilmasi'}>
       <Layout>
         <Structure />
       </Layout>

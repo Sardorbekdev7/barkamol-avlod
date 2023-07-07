@@ -121,6 +121,7 @@
   border-radius: 25px;
   padding: 25px 25px 10px 25px;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .newslink {
@@ -141,7 +142,7 @@
 
 .newslinks {
   min-width: 156px;
-  margin: 5px 0;
+  margin: 5px 12px;
   height: 55px;
   background: #FFFFFF;
   border-radius: 16px;
@@ -153,6 +154,7 @@
 .newslinks img{
   margin-right: 12px;
 }
+
 
 
 

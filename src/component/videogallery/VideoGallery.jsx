@@ -1,12 +1,12 @@
 import Link from 'next/link'
-import style from './style/gallery.module.css'
+import style from './style/videogallery.module.css'
 import { Col, Row } from 'antd'
 import Image from 'next/image'
 
 import img from '../../../public/gallery/clock.svg'
 import Links from '../news/newspage/Links'
 
-const Gallery = ({data, titles}) => {
+const VideoGallery = ({data, titles}) => {
   return (
     <div className={style.container}>
       <div className={style.gallery}>
@@ -23,7 +23,7 @@ const Gallery = ({data, titles}) => {
                   <Link href={'/axborot-xizmati/photos/'}>
                     <div className={style.galleryCard}>
                       <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-                        <Image src={item.image} alt='' width={368} height={200} /> 
+                        <iframe src={item.image} width={368} height={200} /> 
                       </div>
                       <div className={style.galleryText}>
                         <div style={{display: 'flex', alignItems: 'center', marginBottom: '14px'}}>
@@ -50,4 +50,4 @@ const Gallery = ({data, titles}) => {
   )
 }
 
-export default Gallery
+export default VideoGallery

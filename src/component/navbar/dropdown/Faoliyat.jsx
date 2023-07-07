@@ -7,13 +7,13 @@ const items = [
   {
     key: '1',
     label: (
-      <p>To{`'`}garak boshliqlari</p>
+      <Link href={'/faoliyat/togarak-rahbarlari/'}>To{`'`}garak boshliqlari</Link>
     )
   },
   {
     key: '2',
     label: (
-      <p>Boshqa xodimlar</p>
+      <Link href={'/faoliyat/boshqa-xodimlar'}>Boshqa xodimlar</Link>
     )
   }
 ]

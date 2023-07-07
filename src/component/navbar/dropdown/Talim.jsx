@@ -7,43 +7,43 @@ const items = [
   {
     key: '1',
     label: (
-    <p>Madaniyat va san{`'`}at</p>
+    <Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Madaniyat va san{`'`}at</Link>
     )
   },
   {
     key: '2',
     label: (
-      <p>Texnika konstruktorlik va modellashtirish</p>
+      <Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Texnika konstruktorlik va modellashtirish</Link>
     )
   },
   {
     key: '3',
     label: (
-      <p>Jismoniy tarbiya va sport</p>
+      <Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Jismoniy tarbiya va sport</Link>
     )
   },
   {
     key: '4',
     label: (
-      <p>Hunarmandchilik va qo{`'`}l mehnati</p>
+      <Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Hunarmandchilik va qo{`'`}l mehnati</Link>
     )
   },
   {
     key: '5',
     label: (
-      <p>Ekologiya va turizm</p>
+      <Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Ekologiya va turizm</Link>
     )
   },
   {
     key: '6',
     label: (
-      <p>Oliy ta{`'`}lim muassasalari va maktabga tayyorlov</p>
+      <Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Oliy ta{`'`}lim muassasalari va maktabga tayyorlov</Link>
     )
   },
   {
     key: '7',
     label: (
-      <p>Xorijiy tillar</p>
+      <Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Xorijiy tillar</Link>
     )
   }
 ]

@@ -2,14 +2,14 @@ import Layout from '@/helps/Layout'
 import SEO from '@/helps/SEO/SEO'
 import React from 'react'
 
-const Maktab = () => {
+const index = () => {
   return (
-    <SEO metaTitle={'Maktab'}>
+    <SEO metaTitle={'Faoliyat'}>
       <Layout>
-
+        
       </Layout>
     </SEO>
   )
 }
 
-export default Maktab
+export default index

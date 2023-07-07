@@ -5,7 +5,7 @@ import React from 'react'
 
 const Talim = () => {
   return (
-    <SEO metaTitle="Ta'lim yo'nalishlari">
+    <SEO metaTitle={"Ta'lim yo'nalishlari"}>
       <Layout>
         <Edu />
       </Layout>

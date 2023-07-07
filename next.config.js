@@ -4,3 +4,9 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  images: {
+    domains: ['zamon.al-electronics.uz', 'xn----7sbemcvc6aaeev1c4g.xn--p1ai', 'lasercertification.org'],
+  },
+}

@@ -83,26 +83,26 @@ const Footer = () => {
                   <Col>
                     <ul>
                       <li><Link className={style.listactive} href={'/talim-yonalishlari/'}>Ta{`'`}lim yo{`'`}nalishlari</Link></li>
-                      <li>Madaniyat va san’at</li>
-                      <li>Texnika konstruktorlik va modellashtirish</li>
-                      <li>Jismoniy tarbiya va sport</li>
-                      <li>Hunarmandchilik va qo‘l mehnati</li>
-                      <li>Ekologiya va turizm </li>
-                      <li>Oliy ta’lim muassasalari va maktabga tayyorlov</li>
-                      <li>Xorijiy tillar</li>
+                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Madaniyat va san{`'`}at</Link></li>
+                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Texnika konstruktorlik va modellashtirish</Link></li>
+                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Jismoniy tarbiya va sport</Link></li>
+                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Hunarmandchilik va qo{`'`}l mehnati</Link></li>
+                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Ekologiya va turizm</Link></li>
+                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Oliy ta{`'`}lim muassasalari va maktabga tayyorlov</Link></li>
+                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Xorijiy tillar</Link></li>
                     </ul>
                   </Col>
                   <Col>
                     <ul>
                       <li className={style.listactive}>Faoliyat</li>
-                      <li>To{`'`}garak rahbarlari</li>
-                      <li>Boshqa hodimlar</li>
+                      <li><Link href={'/faoliyat/togarak-rahbarlari/'}>To{`'`}garak boshliqlari</Link></li>
+                      <li><Link href={'/faoliyat/boshqa-xodimlar'}>Boshqa xodimlar</Link></li>
                       <li><br /></li>
                     </ul>
                     <ul>
                       <li className={style.listactive}>Axborot xizmati</li>
-                      <li>Galereya</li>
-                      <li>Videogalereya</li>
+                      <li><Link href={'/axborot-xizmati/galereya'}>Galereya</Link></li>
+                      <li><Link href={'/axborot-xizmati/videogalereya'}>Videogaleya</Link></li>
                     </ul>
                   </Col>
                 </Row>

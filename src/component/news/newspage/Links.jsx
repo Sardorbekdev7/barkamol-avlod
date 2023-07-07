@@ -10,16 +10,22 @@ const Links = () => {
             <p>Yangiliklarni tarmoqlarda ulashing</p>
             <div className={style.newslink}>
               <div className={style.newslinks}>
-                <Image src={facebook} alt="" />
-                <span>Facebook</span>
+                <a style={{display: "flex", alignItems: "center"}} href="https://www.facebook.com/tosh_babm" target='blank'>
+                  <Image src={facebook} alt="" />
+                  <span>Facebook</span>
+                </a>
               </div>
               <div className={style.newslinks}>
-                <Image src={instagram} alt="" />
-                <span>Instagram</span>
+                <a style={{display: "flex", alignItems: "center"}}  href="https://www.instagram.com/toshbabm" target='blank'>
+                  <Image src={instagram} alt="" />
+                  <span>Instagram</span>
+                </a>
               </div>
               <div className={style.newslinks}>
-                <Image src={telegram} alt="" />
-                <span>Telegram</span>
+                <a style={{display: "flex", alignItems: "center"}}  href="https://t.me/toshkent_babm" target='blank'>
+                  <Image src={telegram} alt="" />
+                  <span>Telegram</span>
+                </a>
               </div>
             </div>
           </div>
