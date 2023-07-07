@@ -1,7 +1,7 @@
 .homepage {
   position: relative;
   max-width: 1517px;
-  max-height: 100vh; 
+  height: 100vh; 
   display: flex;
   padding: 250px 0 125px 0 ;
   margin:  0 auto;

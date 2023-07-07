@@ -8,6 +8,7 @@
   align-items: center;
   text-align: center;
   color: #20AFFF;
+  margin-bottom: 16px !important;
 }
 
 .newscard h1 {

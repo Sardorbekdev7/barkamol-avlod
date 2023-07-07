@@ -16,6 +16,7 @@
   align-items: center;
   text-align: center;
   color: #20AFFF;
+  margin-bottom: 16px !important;
 }
 
 .coursecard h1 {
@@ -56,9 +57,10 @@
 
 .coursecardoption {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-top: 8px;
   position: relative;
+  overflow: hidden;
 }
 
 .coursecardoption p{
