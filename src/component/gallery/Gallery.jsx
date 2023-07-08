@@ -5,8 +5,26 @@ import Image from 'next/image'
 
 import img from '../../../public/gallery/clock.svg'
 import Links from '../news/newspage/Links'
+import { useAuthStore } from '@/store/auth.store'
+import { getData } from '@/service/api.service'
+import { useEffect } from 'react'
 
 const Gallery = ({data, titles}) => {
+  const {photos, setPhotos} = useAuthStore()
+
+  const getPhotos = () => {
+    getData('photo_gallery').then(res => {
+      setPhotos(res.data)
+      console.log(res.data);
+    }).catch(err => {
+      console.log(err);
+    })
+  } 
+
+  useEffect(() => {
+    getPhotos()
+  }, []);
+
   return (
     <div className={style.container}>
       <div className={style.gallery}>
@@ -18,19 +36,19 @@ const Gallery = ({data, titles}) => {
           <h1>{titles}</h1>
           <div>
             <Row>
-              {data.map((item, key)=> (
+              {photos.map((item, key)=> (
                 <Col key={key} lg={8} md={12} sm={24}>
-                  <Link href={'/axborot-xizmati/photos/'}>
+                  <Link href={`/axborot-xizmati/fotogalereya/${item.id}/`}>
                     <div className={style.galleryCard}>
                       <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-                        <Image src={item.image} alt='' width={368} height={200} /> 
+                        <Image src={item.image1} alt='' width={368} height={200} /> 
                       </div>
                       <div className={style.galleryText}>
                         <div style={{display: 'flex', alignItems: 'center', marginBottom: '14px'}}>
                           <Image src={img} alt='' />
                           <p>20 : 30 | 03.02.2023</p>
                         </div>
-                        <h1>{item.deskeription}</h1>
+                        <h1>{item.name_uz}</h1>
                       </div>
                     </div>
                   </Link>
