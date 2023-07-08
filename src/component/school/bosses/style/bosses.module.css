@@ -6,14 +6,17 @@
 
 .bossimg {
   margin-right: 40px;
+  height: 333px;
+  width: 300px;
 }
 
 .boss {
-  height: 100%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 40px;
+  padding: 20px 0;
 }
 
 .boss h1{
@@ -31,14 +34,13 @@
   align-items: center;
 }
 
-.bosscard p{
+.boss p{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 30px;
-  margin-top: 24px;
-  margin-bottom: 15px;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
   color: #000000;
 }
 
@@ -54,6 +56,7 @@
 
 .boss img {
   margin-right: 16px;
+  width: auto;
 }
 
 .bosscard {
@@ -75,7 +78,39 @@
   padding: 0;
 }
 
+.bossConnect a{
+  color: #404040 !important;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px !important;
+}
 
+.bossConnect {
+  margin-bottom: 20px;
+}
+
+.bossText h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  margin-top: 17px !important;
+}
+
+.bossText p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 8px 0 !important;
+}
 
 
 
@@ -85,6 +120,18 @@
   }
   .bosseslink{
     margin: 0;
+  }
+
+  .bosscard {
+    display: flex;
+    width: 100%;
+    margin: 0 auto !important;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bossText {
+    text-align: center;
   }
 }
 
