@@ -22,6 +22,8 @@ export const useAuthStore = create(set => ({
   setPhotoId: (id) => set(state => ({...state, photo_id: id})),
   videos: [],
   setVideos: (videos) => set(state => ({...state, videos: videos})),
+  video: [],
+  setVideo: (video) => set(state => ({...state, video: video})),
   video_id: [],
   setVideoId: (id) => set(state => ({...state, video_id: id})),
 }))
