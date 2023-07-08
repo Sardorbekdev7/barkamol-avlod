@@ -9,28 +9,27 @@ import { useAuthStore } from '@/store/auth.store'
 import { getData } from '@/service/api.service'
 import { useEffect } from 'react'
 
-const Gallery = ({data, titles}) => {
-  const {photos, setPhotos} = useAuthStore()
+const Gallery = ({ titles }) => {
+  const {photos, setPhotos, photo_id, setPhotoId} = useAuthStore()
 
   const getPhotos = () => {
     getData('photo_gallery').then(res => {
       setPhotos(res.data)
-      console.log(res.data);
     }).catch(err => {
       console.log(err);
     })
   } 
-
+  
   useEffect(() => {
-    getPhotos()
-  }, []);
+    getPhotos()    
+  }, [photo_id]);
 
   return (
     <div className={style.container}>
       <div className={style.gallery}>
         <div style={{display: 'flex'}}>
           <p style={{color: '#3D3D3D', fontSize: '14px', fontFamily: 'Poppins'}}>Axborot xizmati {'>'}</p>
-          <Link style={{color: '#3D3D3D', fontSize: '14px', fontFamily: 'Poppins'}} href={'/axborot-xizmati/galereya/'}>{titles}</Link>
+          <Link style={{color: '#3D3D3D', fontSize: '14px', fontFamily: 'Poppins'}} href={'/axborot-xizmati/fotogalereya/'}>{titles}</Link>
         </div>
         <div>
           <h1>{titles}</h1>
@@ -38,7 +37,7 @@ const Gallery = ({data, titles}) => {
             <Row>
               {photos.map((item, key)=> (
                 <Col key={key} lg={8} md={12} sm={24}>
-                  <Link href={`/axborot-xizmati/fotogalereya/${item.id}/`}>
+                  <Link onClick={() => setPhotoId(item.id)} href={`/axborot-xizmati/fotogalereya/${item.id}/`}>
                     <div className={style.galleryCard}>
                       <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
                         <Image src={item.image1} alt='' width={368} height={200} /> 

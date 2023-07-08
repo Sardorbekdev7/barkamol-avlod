@@ -32,7 +32,7 @@ const VideoGallery = ({data, titles}) => {
       <div className={style.gallery}>
         <div style={{display: 'flex'}}>
           <p style={{color: '#3D3D3D', fontSize: '14px', fontFamily: 'Poppins'}}>Axborot xizmati {'>'}</p>
-          <Link style={{color: '#3D3D3D', fontSize: '14px', fontFamily: 'Poppins'}} href={'/axborot-xizmati/galereya/'}>{titles}</Link>
+          <Link style={{color: '#3D3D3D', fontSize: '14px', fontFamily: 'Poppins'}} href={'/axborot-xizmati/fotogalereya/'}>{titles}</Link>
         </div>
         <div>
           <h1>{titles}</h1>

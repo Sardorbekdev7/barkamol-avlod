@@ -48,7 +48,7 @@ const DrawerBarkamol = () => {
       getItem(<Link href="/faoliyat/boshqa-xodimlar/"><p>Boshqa xodimlar</p></Link>, '2')
     ]),
     getItem(<p>Axborot xizmati</p>, 'sub5', <></>, [
-      getItem(<Link href="/axborot-xizmati/galereya/"><p>Galereya</p></Link>, '1'),
+      getItem(<Link href="/axborot-xizmati/fotogalereya/"><p>Galereya</p></Link>, '1'),
       getItem(<Link href="/axborot-xizmati/videogalereya/"><p>Videogaleya</p></Link>, '2')
     ])
   ]

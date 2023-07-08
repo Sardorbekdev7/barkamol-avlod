@@ -101,7 +101,7 @@ const Footer = () => {
                     </ul>
                     <ul>
                       <li className={style.listactive}>Axborot xizmati</li>
-                      <li><Link href={'/axborot-xizmati/galereya'}>Galereya</Link></li>
+                      <li><Link href={'/axborot-xizmati/fotogalereya'}>Galereya</Link></li>
                       <li><Link href={'/axborot-xizmati/videogalereya'}>Videogaleya</Link></li>
                     </ul>
                   </Col>

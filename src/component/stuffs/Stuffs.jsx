@@ -27,7 +27,7 @@ const Stuffs = ( {api_link, link, title }) => {
       <div className={style.stuffs}>
         <div style={{display: 'flex'}}>
           <p style={{color: '#3D3D3D', fontSize: '14px', fontFamily: 'Poppins'}}>Axborot xizmati {'>'}</p>
-          <Link style={{color: '#3D3D3D', fontSize: '14px', fontFamily: 'Poppins'}} href={'/axborot-xizmati/galereya/'}>{link}</Link>
+          <Link style={{color: '#3D3D3D', fontSize: '14px', fontFamily: 'Poppins'}} href={'/axborot-xizmati/fotogalereya/'}>{link}</Link>
         </div>
         <div>
           <div className={style.title}>
