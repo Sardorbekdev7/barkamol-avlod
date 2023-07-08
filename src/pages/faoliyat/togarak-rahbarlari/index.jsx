@@ -8,7 +8,7 @@ const index = () => {
   return (
     <SEO metaTitle={'Faoliyat'}>
       <Layout>
-        <Stuffs data={stuffs} link={`To’garak rahbarlari`} title={"Toshkent shahar “Barkamol Avlod” bolalar maktabining to’garak rahbarlari"} />
+        <Stuffs api_link={'course_owners'} link={`To’garak rahbarlari`} title={"Toshkent shahar “Barkamol Avlod” bolalar maktabining to’garak rahbarlari"} />
       </Layout>
     </SEO>
   )

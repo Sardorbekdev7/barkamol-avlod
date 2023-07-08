@@ -3,8 +3,25 @@ import style from './style/stuffs.module.css'
 import { Col, Row } from 'antd'
 import Image from 'next/image'
 import Links from '../news/newspage/Links'
+import { useAuthStore } from '@/store/auth.store'
+import getStuffLeader, { getData } from '@/service/api.service'
+import { useEffect } from 'react'
 
-const Stuffs = ( { data, link, title }) => {
+const Stuffs = ( {api_link, link, title }) => {
+  const {stuffLeader, setStuffLeader} = useAuthStore()
+
+  const getStuffLeader = () => {
+    console.log(api_link);
+    getData(api_link).then(res => {
+      setStuffLeader(res.data)
+      console.log(res.data)
+    })
+  }
+
+  useEffect(() => {
+    getStuffLeader()
+  }, []);
+  
   return (
     <div className={style.container}>
       <div className={style.stuffs}>
@@ -18,16 +35,16 @@ const Stuffs = ( { data, link, title }) => {
           </div>
           <div>
             <Row>
-              {data.map((item, key) => (
+              {stuffLeader.map((item, key) => (
                 <Col style={{margin: '0 auto'}} key={key} lg={6} md={12} sm={24} >
                   <div className={style.stuffCard}>
-                    <Image src={item.image} alt='' width={250} height={333} />
-                    <div className={style.stuffCardText} >
-                      <h1>{item.name}</h1>
-                      <p>{item.rank}</p>
-                      <a href={`tel:${item.tel}`}>Telefon raqami: {item.tel}</a>
+                    {item.image && <Image src={item.image} alt='' width={250} height={333} />}
+                      <div className={style.stuffCardText} >
+                      <h1>{item.name_uz}</h1>
+                      <p>{item.position_uz}</p>
+                      <a href={`tel:${item.phone}`}>Telefon raqami: {item.phone}</a>
                       <br />
-                      <a href={`mailto:${item.mail}`}>E-mail: {item.mail}</a>
+                      <a href={`mailto:${item.email}`}>E-mail: {item.email}</a>
                     </div>
                   </div>
                 </Col>
