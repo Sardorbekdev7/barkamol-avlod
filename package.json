@@ -12,6 +12,7 @@
     "@ant-design/icons": "^5.0.1",
     "@trendyol-js/react-carousel": "^3.0.2",
     "antd": "^5.4.6",
+    "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
