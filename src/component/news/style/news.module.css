@@ -40,6 +40,12 @@
   overflow: hidden !important;
 }
 
+.newscardimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .newscardimg p {
   position: absolute;
   padding: 6px 9px;
@@ -57,12 +63,15 @@
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
+  z-index: 5;
 }
 
 .newscardimg img {
-  width: 100% !important;
+  width: auto;
   height: auto;
+  height: 200px;
   overflow: hidden;
+  z-index: -1;
 }
 .newscardtext {
   padding: 15px;

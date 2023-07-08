@@ -40,7 +40,8 @@
 
 .sponsorcarousel img{
   margin-bottom: 16px;
-  height: 100px;
+  height: auto;
+  width: auto;
 }
 
 .sponsorcarousel p{

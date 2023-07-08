@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import style from './style/sponsor.module.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -12,8 +12,22 @@ import img4 from '../../../public/sponsors/img4.svg'
 import img5 from '../../../public/sponsors/img5.svg'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useAuthStore } from '@/store/auth.store';
+import { getData } from '@/service/api.service';
 
 const Sponsor = () => {
+  const {sponsor, setSponsor} = useAuthStore()  
+
+  const getSponsor = () => {
+    getData('partners').then(res => {
+      setSponsor(res.data)
+      console.log(res.data);
+    })
+  }
+
+  useEffect(() => {
+    getSponsor()
+  }, []);
   
   const responsive = {
     desktop: {
@@ -34,38 +48,29 @@ const Sponsor = () => {
   };
   return (
     <Container>
-      <div className={style.sponsorcard}>
-        <p>-Hamkorlar-</p>
-        <h1>Bizning hamkorlar</h1>
+      <div style={{marginBottom: '90px'}}>
+        <div className={style.sponsorcard}>
+          <p>-Hamkorlar-</p>
+          <h1>Bizning hamkorlar</h1>
+        </div>
+        <Carousel 
+          responsive={responsive}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={2000}
+          itemClass="carousel-item-padding-40-px"
+        >
+          {sponsor.map((item, key) => (
+            <div className={style.sponsorcarousel}>
+              <div style={{height: '100px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                <img src={item.image} alt=''/>
+              </div>
+              <p>{item.name_uz}</p>
+            </div>
+          ))}
+          
+        </Carousel>
       </div>
-      <Carousel 
-        responsive={responsive}
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={2000}
-        itemClass="carousel-item-padding-40-px"
-      >
-        <div className={style.sponsorcarousel}>
-          <Image src={img1} alt='' />
-          <p>O’zbekiston Respublikasi <br /> milliy huquqiy internet portali</p>
-        </div>
-        <div className={style.sponsorcarousel}>
-          <Image src={img2} alt='' />
-          <p>O’zbekiston Respublikasining <br /> qonun hujjatlari ma’lumotlar <br /> milliy bazasi</p>
-        </div>
-        <div className={style.sponsorcarousel}>
-          <Image src={img3} alt='' />
-          <p>Yagona interaktiv davlat <br /> xizmatlari portali</p>
-        </div>
-        <div className={style.sponsorcarousel}>
-          <Image src={img4} alt='' />
-          <p>O’zbekiston Respublikasining <br /> ochiq ma’lumotlar bazasi</p>
-        </div>
-        <div className={style.sponsorcarousel}>
-          <Image src={img5} alt='' />
-          <p>O’zbekiston Respublikasi <br /> Prezidenti rasmiy veb sayti</p>
-        </div>
-      </Carousel>
 
     </Container>
   )
