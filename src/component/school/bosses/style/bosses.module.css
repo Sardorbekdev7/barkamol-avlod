@@ -1,13 +1,14 @@
 .bosses {
   max-width: 1517px;
   padding: 0 100px;
-  margin: 80px auto;
+  margin: 40px auto;
 }
 
 .bossimg {
   margin-right: 40px;
   height: 333px;
-  width: 300px;
+  max-width: 300px !important;
+  overflow: hidden !important;
 }
 
 .boss {
@@ -61,7 +62,7 @@
 
 .bosscard {
   padding: 25px;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .bosseslink a{
@@ -129,9 +130,14 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 0 ;
   }
   .bossText {
     text-align: center;
+  }
+
+  .bossimg {
+    margin-right: 0;
   }
 }
 
