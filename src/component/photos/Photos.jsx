@@ -8,7 +8,7 @@ import { useAuthStore } from '@/store/auth.store'
 import { getData, getDataId } from '@/service/api.service'
 import { useEffect } from 'react'
 
-const Photos = ({ data, galereya }) => {
+const Photos = ({ data }) => {
   const {photo_id, setPhotoId, photo, setPhoto, setPhotos, photos} = useAuthStore()
 
   const getPhoto = () => {
@@ -35,8 +35,11 @@ const Photos = ({ data, galereya }) => {
   useEffect(() => {
     getPhoto()
     getPhotos()
-    getId()
   }, [photo_id]);
+
+  useEffect(() => {
+    getId()
+  }, [])
  
 
   return (
