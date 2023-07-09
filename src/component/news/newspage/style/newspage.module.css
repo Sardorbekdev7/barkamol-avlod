@@ -144,6 +144,10 @@
   color: #FFFFFF;
 }
 
+.newsH1 {
+  margin: 16px 0 !important;
+}
+
 .newslinks {
   min-width: 156px;
   margin: 5px 12px;

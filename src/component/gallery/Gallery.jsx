@@ -8,6 +8,7 @@ import Links from '../news/newspage/Links'
 import { useAuthStore } from '@/store/auth.store'
 import { getData } from '@/service/api.service'
 import { useEffect } from 'react'
+import { format } from 'date-fns'
 
 const Gallery = ({ titles }) => {
   const {photos, setPhotos, photo_id, setPhotoId} = useAuthStore()
@@ -45,7 +46,7 @@ const Gallery = ({ titles }) => {
                       <div className={style.galleryText}>
                         <div style={{display: 'flex', alignItems: 'center', marginBottom: '14px'}}>
                           <Image src={img} alt='' />
-                          <p>20 : 30 | 03.02.2023</p>
+                          <p>{format(item.date == null ? new Date() : new Date(item.date), "dd MMM, yyyy")}</p>
                         </div>
                         <h1>{item.name_uz}</h1>
                       </div>

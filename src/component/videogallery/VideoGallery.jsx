@@ -10,6 +10,7 @@ import { getData } from '@/service/api.service'
 import Plyr from 'plyr'
 import { useEffect } from 'react'
 import ReactPlayer from 'react-player'
+import { format } from 'date-fns'
 
 
 
@@ -52,7 +53,7 @@ const VideoGallery = ({data, titles}) => {
                       <div className={style.galleryText}>
                         <div style={{display: 'flex', alignItems: 'center', marginBottom: '14px'}}>
                           <Image src={img} alt='' />
-                          <p>20 : 30 | 03.02.2023</p>
+                          <p>{format(item.date == null ? new Date() : new Date(item.date), "dd MMM, yyyy")}</p>
                         </div>
                         <h1>{item.name_uz}</h1>
                       </div>

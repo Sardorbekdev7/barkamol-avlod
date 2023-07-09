@@ -8,7 +8,7 @@ import { Button } from 'antd'
 import style from './style/newspage.module.css'
 import OtherNews from './OtherNews'
 import Links from './Links'
-import { getDataId } from '@/service/api.service'
+import { getData, getDataId } from '@/service/api.service'
 import { useAuthStore } from '@/store/auth.store'
 import { useEffect } from 'react'
 import { format } from 'date-fns'
@@ -23,9 +23,15 @@ const Newspage = () => {
     })
   }
 
+  const getDatas = () => {
+    getData('news').then(res => {
+      setNews(res.data)
+    })
+  }
+
   useEffect(() => {
     getNewData()
-    console.log(news);
+    getDatas()
   }, [newsId]);
 
 
@@ -36,7 +42,7 @@ const Newspage = () => {
           <div>
             <p><Link href={'/'}>Axborot xizmati</Link> {`>`} <Link href={'/axborot-xizmati/yangiliklar/'}>Yangiliklar</Link></p> 
           </div>
-          <h1>{new_id.name_uz}</h1>
+          <h1 className={style.newsH1}>{new_id.name_uz}</h1>
           <div className='clock' style={{display: "flex", alignItems: 'center', justifyContent:'start'}}>
             <Image src={img_1} alt="" width={15} height={15} />
             <span style={{margin: "0 0 0 5px"}}>{format(new_id.date == null ? new Date() : new Date(new_id.date), "dd MMM, yyyy")}</span>

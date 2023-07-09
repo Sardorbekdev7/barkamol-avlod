@@ -4,16 +4,35 @@ import img from '../../../public/edu/img1.svg'
 import Image from 'next/image'
 import { Collapse } from 'antd'
 import Link from 'next/link';
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import OtherNews from '../news/newspage/OtherNews'
+import { useAuthStore } from '@/store/auth.store'
+import { getData, slugify } from '@/service/api.service'
 
 const { Panel } = Collapse;
 
 
 const Edu = () => {
-  const {icon, setIcon} = useState(true)
+  const {category, setCategory, course, setCourse, course_id, setCourseId, path, setPath} = useAuthStore()
 
+  const getCategory = () => {
+    getData("categories").then(res => {
+      setCategory(res.data)
+    })
+  }
 
+  const getCourse = () => {
+    getData("courses").then(res => {
+      setCourse(res.data)
+    })
+  }
+
+  useEffect(() => {
+    getCategory()
+    getCourse()
+  }, [course_id]);
+ 
+  
   return (
     <div className={style.edu}>
       <div className={style.eduimg}>
@@ -32,24 +51,15 @@ const Edu = () => {
             marginTop: '50px',
             boxShadow: 'none',
         }}>
-          <Panel header='Madaniyat va San’at' key={'1'}>
-            <p>Ona tili</p>
-          </Panel>
-          <Panel header='Madaniyat va San’at' key={'2'}>
-            <p>Ona tili</p>
-          </Panel>
-          <Panel header='Madaniyat va San’at' key={'3'}>
-            <p>Ona tili</p>
-          </Panel>
-          <Panel header='Madaniyat va San’at' key={'4'}>
-            <p>Ona tili</p>
-          </Panel>
-          <Panel header='Madaniyat va San’at' key={'5'}>
-            <p>Ona tili</p>
-          </Panel>
-          <Panel header='Madaniyat va San’at' key={'6'}>
-            <p>Ona tili</p>
-          </Panel>
+          {category.map((item, key) => (
+            <Panel header={item.name_uz} key={key}>
+              {course.map((it, key) => (
+                <Link key={key} onClick={() => setCourseId(it.id)} href={`/talim-yonalishlari/${slugify(item.name_uz)}/${it.id}`} >
+                  <p>{item.id == it.category ? it.name_uz : <></>}</p>
+                </Link>
+              ))}
+            </Panel>
+          ))}
         </Collapse>
         </div>
         <div className={style.edutextright}>

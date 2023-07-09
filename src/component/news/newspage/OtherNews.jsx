@@ -3,7 +3,7 @@ import time from '../../../../public/newspage/clock.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { format } from 'date-fns'
-import { getDataId } from '@/service/api.service'
+import { getData, getDataId } from '@/service/api.service'
 import { useEffect } from 'react'
 import { useAuthStore } from '@/store/auth.store'
 
@@ -17,8 +17,16 @@ const OtherNews = () => {
     })
   }
 
+  const getDatas = () => {
+    getData('news').then(res => {
+      setNews(res.data)
+    })
+  }
+
+
   useEffect(() => {
     getNewData()
+    getDatas()
     console.log(news);
   }, []);
 
