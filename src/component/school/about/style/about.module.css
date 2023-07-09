@@ -1,7 +1,7 @@
 .about {
   max-width: 1517px;
   padding: 0 100px;
-  margin: 80px auto;
+  margin: 40px auto !important;
 }
 
 .aboutlink p {
