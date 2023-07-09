@@ -1,12 +1,13 @@
 .navbar {
-  position: relative;
+  position: sticky;
   max-width: 1517px;
   margin: 0 auto !important;
   height: 78px;
+  margin-top: 39px !important;
   padding: 0 100px;
-  /* left: 0px; */
-  top: 39px;
-  z-index: 22 !important;
+  left: auto;
+  top: 0px;
+  z-index: 1000 !important;
   transition: all .3s ease ;
   background: rgba(255, 255, 255, 1);
   backdrop-filter: blur(20px);
@@ -69,6 +70,7 @@
   .navbar {
     top: 0px !important;
     padding: 0 3.1rem;
+    margin-top: 0 !important;
     position: sticky;
   }
 }

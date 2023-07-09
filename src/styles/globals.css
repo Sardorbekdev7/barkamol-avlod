@@ -90,3 +90,6 @@ a{
   
 }
 
+.ant-drawer-content-wrapper {
+  z-index: 12341211 !important;
+}

@@ -2,27 +2,14 @@ import React from 'react'
 import style from "./style/homeheader.module.css"
 import { Container } from 'react-bootstrap'
 import backimg from '../../../public/homeheader/headerimg.jpg'
-import Image from 'next/image'
 import { Button, Col, Row } from 'antd'
-import facebook from '../../../public/homeheader/facebook.svg'
-import instagram from '../../../public/homeheader/instagram.svg'
-import telegram from '../../../public/homeheader/telegram.svg'
-import Link from 'next/link'
+
+import Navigat from './Navigat'
 
 const HomeHeader = () => {
   return (
     <div className={style.homepage}>
-      <div className={style.navigat}>
-        <Link href={'https://facebook.com/@tosh_babm'} target='__blank'>
-          <Image src={facebook} alt='facebook' />
-        </Link>
-        <Link href={'https://instagram.com/@toshbabm'} target='__blank' style={{margin: '10px 0'}}>
-          <Image src={instagram} alt='instagram' />
-        </Link>
-        <Link href={'https://t.me/@toshkent_babm'} target='__blank'>
-          <Image src={telegram} alt='telegram' />
-        </Link>
-      </div>
+      <Navigat />
       <div className={style.container} >
           <Row style={{
             height: '100%'
