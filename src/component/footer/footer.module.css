@@ -144,8 +144,14 @@
   }
   .footLeft {
     border: none;
+    margin-right: 20px !important;
   }
-  
+  .footLeftItems ul{
+    margin-right: 20px;
+  }  
+  .footLeftImg {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 768px) {

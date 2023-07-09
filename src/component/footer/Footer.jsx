@@ -27,22 +27,27 @@ const Footer = () => {
             <div className={style.footLeft}>
               <Row>
                 <Col lg={24} md={12}>
-                  <div className={style.footBrand}>
-                    <Image src={brand} alt='brand' />
+                  <div className={style.footLeftImg}>
+                    <div className={style.footBrand}>
+                      <Image src={brand} alt='brand' />
+                    </div>
+                    <Image src={name} alt='name' />
+
                   </div>
-                  <Image src={name} alt='name' />
                 </Col>
                 <Col lg={24} md={12}>
-                  <span>10011, O’zbekiston, Toshkent, <br />
-                  Shayxontoxur tumani, <br />
-                  Navoiy ko’chasi, 2A uy 
-                  </span>
-                  <div className={style.aloqa}>
-                    <a href='tel:+998712020909'><Image src={tel} alt='tel'/><p>(71) 202 09 09</p></a>
-                    <a href="mailto:info@tbabm.uz"><Image src={mail} alt='mail' /><p>info@tbabm.uz</p></a>
-                    <a href="https://www.facebook.com/tosh_babm" target='blank'><Image src={facebook} alt='facebook' /><p>@tosh_babm</p></a>
-                    <a href="https://www.instagram.com/toshbabm" target='blank'><Image src={insta} alt='instagram' /><p>@toshbabm</p></a>
-                    <a href="https://t.me/toshkent_babm" target='blank'><Image src={telegram} alt='telegram' /><p>@toshkent_babm</p></a>
+                  <div className={style.footLeftText}>
+                    <span>10011, O’zbekiston, Toshkent, <br />
+                    Shayxontoxur tumani, <br />
+                    Navoiy ko’chasi, 2A uy 
+                    </span>
+                    <div className={style.aloqa}>
+                      <a href='tel:+998712020909'><Image src={tel} alt='tel'/><p>(71) 202 09 09</p></a>
+                      <a href="mailto:info@tbabm.uz"><Image src={mail} alt='mail' /><p>info@tbabm.uz</p></a>
+                      <a href="https://www.facebook.com/tosh_babm" target='blank'><Image src={facebook} alt='facebook' /><p>@tosh_babm</p></a>
+                      <a href="https://www.instagram.com/toshbabm" target='blank'><Image src={insta} alt='instagram' /><p>@toshbabm</p></a>
+                      <a href="https://t.me/toshkent_babm" target='blank'><Image src={telegram} alt='telegram' /><p>@toshkent_babm</p></a>
+                    </div>
                   </div>
                 </Col>
               </Row>
@@ -82,14 +87,14 @@ const Footer = () => {
                   </Col>
                   <Col>
                     <ul>
-                      <li><Link className={style.listactive} href={'/talim-yonalishlari/'}>Ta{`'`}lim yo{`'`}nalishlari</Link></li>
-                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Madaniyat va san{`'`}at</Link></li>
-                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Texnika konstruktorlik va modellashtirish</Link></li>
-                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Jismoniy tarbiya va sport</Link></li>
-                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Hunarmandchilik va qo{`'`}l mehnati</Link></li>
-                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Ekologiya va turizm</Link></li>
-                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Oliy ta{`'`}lim muassasalari va maktabga tayyorlov</Link></li>
-                      <li><Link href={'/talim-yonalishlari/madaniyat-sanat/'}>Xorijiy tillar</Link></li>
+                      <li className={style.listactive}>Ta{`'`}lim yo{`'`}nalishlari</li>
+                      <li><Link href={'/talim-yonalishlari/'}>Madaniyat va san{`'`}at</Link></li>
+                      <li><Link href={'/talim-yonalishlari/'}>Texnika konstruktorlik va modellashtirish</Link></li>
+                      <li><Link href={'/talim-yonalishlari/'}>Jismoniy tarbiya va sport</Link></li>
+                      <li><Link href={'/talim-yonalishlari/'}>Hunarmandchilik va qo{`'`}l mehnati</Link></li>
+                      <li><Link href={'/talim-yonalishlari/'}>Ekologiya va turizm</Link></li>
+                      <li><Link href={'/talim-yonalishlari/'}>Oliy ta{`'`}lim muassasalari va maktabga tayyorlov</Link></li>
+                      <li><Link href={'/talim-yonalishlari/'}>Xorijiy tillar</Link></li>
                     </ul>
                   </Col>
                   <Col>
