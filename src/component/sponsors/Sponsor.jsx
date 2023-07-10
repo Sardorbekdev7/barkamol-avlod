@@ -61,7 +61,7 @@ const Sponsor = () => {
           itemClass="carousel-item-padding-40-px"
         >
           {sponsor.map((item, key) => (
-            <div className={style.sponsorcarousel}>
+            <div key={key} className={style.sponsorcarousel}>
               <div style={{height: '100px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
                 <Image src={item.image} alt=''/>
               </div>

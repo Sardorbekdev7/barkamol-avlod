@@ -7,6 +7,7 @@ import { Button } from 'antd'
 import { course } from '@/data/data'
 import { useAuthStore } from '@/store/auth.store'
 import { getData, getDataId, makeTitle, slugify } from '@/service/api.service'
+import Image from 'next/image'
 
 
 
@@ -75,7 +76,7 @@ const Course = () => {
             {
               course.map((item, key) => 
                 (
-                  <Link key={key}  onClick={() => setCourseId(item.id)} href={`/talim-yonalishlari/${path}/${item.id}`}>
+                  <Link key={key}  onClick={() => setCourseId(item.id)} href={`/talim-yonalishlari/{${path}}/{${item.id}}`}>
                     <Button>{item.name_uz}</Button>
                   </Link>
                 )

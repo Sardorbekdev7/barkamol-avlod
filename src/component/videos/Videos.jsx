@@ -9,7 +9,7 @@ import { getData, getDataId } from '@/service/api.service'
 import { useEffect } from 'react'
 import ReactPlayer from 'react-player'
 
-const Videos = ({ data, galereya }) => {
+const Videos = () => {
   const {video_id, setVideoId, video, setVideo, setVideos, videos} = useAuthStore()
 
   const getVideo = () => {
