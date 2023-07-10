@@ -43,7 +43,7 @@ const Bosses = () => {
               }} 
               lg={12} md={12} sm={24}>
                 <div className={style.bosscard}>
-                  <img className={style.bossimg} src={item.image} alt='' />
+                  <Image className={style.bossimg} src={item.image} alt='' />
                 </div>
               </Col>
               <Col lg={12} md={12} sm={24}>
@@ -77,7 +77,7 @@ const Bosses = () => {
             leaders.slice(1).map((item, key) => (
               <Col key={key} lg={6} md={12} sm={24}>
                 <div className={style.bosscard}>
-                  <img className={style.bossimg} src={item.image} alt={item.name_uz} />
+                  <Image className={style.bossimg} src={item.image} alt={item.name_uz} />
                   <div className={style.bossText}>
                     <h1>{item.name_uz}</h1>
                     <p>{item.position_uz}</p>

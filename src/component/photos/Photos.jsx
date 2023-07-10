@@ -58,12 +58,12 @@ const Photos = ({ data }) => {
               </div>
               <div>
                   <div className={style.photosImg} style={{margin: '15px 0', gap: '5px'}}>
-                    {photo.image1 && <img style={{margin: '5px 0'}} src={photo.image1} alt=''  />}
-                    {photo.image2 && <img style={{margin: '5px 0'}} src={photo.image2} alt=''  />}
-                    {photo.image3 && <img style={{margin: '5px 0'}} src={photo.image3} alt=''  />}
-                    {photo.image4 && <img style={{margin: '5px 0'}} src={photo.image4} alt=''  />}
-                    {photo.image5 && <img style={{margin: '5px 0'}} src={photo.image5} alt=''  />}
-                    {photo.image6 && <img style={{margin: '5px 0'}} src={photo.image6} alt=''  />}
+                    {photo.image1 && <Image style={{margin: '5px 0'}} src={photo.image1} alt=''  />}
+                    {photo.image2 && <Image style={{margin: '5px 0'}} src={photo.image2} alt=''  />}
+                    {photo.image3 && <Image style={{margin: '5px 0'}} src={photo.image3} alt=''  />}
+                    {photo.image4 && <Image style={{margin: '5px 0'}} src={photo.image4} alt=''  />}
+                    {photo.image5 && <Image style={{margin: '5px 0'}} src={photo.image5} alt=''  />}
+                    {photo.image6 && <Image style={{margin: '5px 0'}} src={photo.image6} alt=''  />}
                   </div>
               </div>
             </div>

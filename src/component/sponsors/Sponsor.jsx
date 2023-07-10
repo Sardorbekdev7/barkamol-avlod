@@ -63,7 +63,7 @@ const Sponsor = () => {
           {sponsor.map((item, key) => (
             <div className={style.sponsorcarousel}>
               <div style={{height: '100px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-                <img src={item.image} alt=''/>
+                <Image src={item.image} alt=''/>
               </div>
               <p>{item.name_uz}</p>
             </div>

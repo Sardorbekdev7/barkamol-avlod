@@ -47,7 +47,7 @@ const Newspage = () => {
             <Image src={img_1} alt="" width={15} height={15} />
             <span style={{margin: "0 0 0 5px"}}>{format(new_id.date == null ? new Date() : new Date(new_id.date), "dd MMM, yyyy")}</span>
           </div>
-          <img src={new_id.photo} alt=''/>
+          <Image src={new_id.photo} alt=''/>
           <div className={style.newspagetext}>
             <p>
               {new_id.text_uz}

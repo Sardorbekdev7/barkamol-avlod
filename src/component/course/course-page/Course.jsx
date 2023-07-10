@@ -58,7 +58,7 @@ const Course = () => {
             <p><Link href={'/'}>Axborot xizmati</Link> {`>`} <Link href={'/talim-yonalishlari/'}>Ma`daniyat va Sa`nat</Link>{` > `}<Link href={`/talim-yonalishlari//`}>{coursewithid.name_uz} to'garagi</Link></p> 
           </div>
           <h1>{coursewithid.name_uz}</h1>
-          <img src={coursewithid.image} alt='' />
+          <Image src={coursewithid.image} alt='' />
           <div className={style.newspagetext}>
             <p>
               {coursewithid.description_uz}
